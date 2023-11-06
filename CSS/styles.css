@@ -1,5 +1,12 @@
 body {
-  background-image: url('irudiak/Informatika_fakultatea_001.jpg');
+  background-image: url('irudiak/Informatika_fakultatea_001.jpeg');
   background-size: cover;
   background-position: center;
+}
+
+.title{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
 }
