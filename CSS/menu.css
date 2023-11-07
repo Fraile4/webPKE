@@ -1,11 +1,23 @@
 .menu {
     position: fixed;
     top: 0;
-    right: -200px; /* La posición inicial está fuera de la pantalla */
+    right: 200px; /* La posición inicial está fuera de la pantalla */
     width: 200px;
     height: 100%;
     background-color: #333; /* Color de fondo del menú */
     transition: right 0.3s; /* Agrega una transición suave de movimiento */
+}
+
+.openBtn {
+    position: absolute; 
+    top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 10px; /* Ajusta la distancia desde la izquierda según tus necesidades */
+    background-color: transparent; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+    border: none; /* Elimina el borde si es necesario */
+    cursor: pointer;
+    width: 20px;
 }
 
 button {
