@@ -1,12 +1,12 @@
 .menu {
     position: fixed;
     top: 0;
-    right: 200px; /* La posición inicial está fuera de la pantalla */
+    left: -200px; /* Inicialmente oculto a la izquierda */
     width: 200px;
     height: 100%;
     background-color: #333; /* Color de fondo del menú */
-    transition: right 0.3s; /* Agrega una transición suave de movimiento */
-}
+    transition: left 0.3s; /* Agrega una transición suave de movimiento */
+  }
 
 .openBtn {
     position: absolute; 
