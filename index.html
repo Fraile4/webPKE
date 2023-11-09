@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="CSS/menu.css">
+    <title>GrAL</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/menu.css">
+    <link rel="stylesheet" href="Styles/header.css">
     <script src="JS/menu.js"></script>
 </head>
 <body>
-    <button class="openBtn" id="openBtn">☰</button>
-    <div class="menu" id="menu">
-        <button onclick="window.location.href = 'GralMemoriak.html'">GrAL Memoriak</button> <p>
-        <button onclick="window.location.href = 'pagina2.html'">Memoriak</button> <p>
-        <button onclick="window.location.href = 'pagina3.html'">About us</button> <p>
-    </div>
+    <header class="header"><!--Hau beti berdina izango da-->
+		<div class="container">
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
+			</div>
+			<nav class="menu">
+				<a href="Index.html">Sarrera</a>
+				<a href="AboutUs.html">Kontaktua</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="GralMemoriak.html">GrAL Memoriak</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
     <div id="title">
         <h1>GrAL informazioa</h1>
         <h4>Danel Osa, Ioritz Tubío, Manex Ormazabal eta Unai Fraile</h2>

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right: 0;
+    background: gray;
+    height:auto;
+    width:100vw;
+    padding-top:1px;
+    color:#fff;
+    padding: 10px 10px;
+}
+.footer-bottom{
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
