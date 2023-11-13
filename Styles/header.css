@@ -1,6 +1,7 @@
 /*Header-en estiloak*/
 .header{
-    background-color: rgb(61, 58, 58);
+    /*background-color: rgb(61, 58, 58);*/
+    background-color: transparent;
     width: 100%;
     height: 100px;
     position: fixed;
