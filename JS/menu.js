@@ -1,12 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const menu = document.getElementById("menu");
-    const mostrarMenuButton = document.getElementById("openBtn");
-  
-    mostrarMenuButton.addEventListener("click", function() {
-      if (parseInt(getComputedStyle(menu).left) === 0) {
-        menu.style.left = "-200px"; // Oculta el menú hacia la izquierda
-      } else {
-        menu.style.left = "0"; // Muestra el menú
-      }
-    });
-  });
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  var header = document.querySelector(".header");
+
+  if (prevScrollpos > currentScrollPos) {
+    // Scroll gora, menua erakutsi
+    header.style.top = "0";
+  } else {
+    // Scroll bera, menua ezkutatu
+    header.style.top = "-60px";
+  }
+
+  prevScrollpos = currentScrollPos;
+};
