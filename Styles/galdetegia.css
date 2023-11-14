@@ -1,0 +1,74 @@
+/*Ordenagailuarentzat*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(231, 231, 231);
+   
+    margin: 0;
+    padding: 0;
+}
+
+.containerG {
+    
+    width: 700px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.quiz {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre el cuestionario y el botón */
+}
+
+.quiz form {
+    display: inline-block;
+}
+
+.submit-button {
+    min-width: 60px;
+    min-height: 25px;
+    margin-left: 88%;
+    font-family: Arial, sans-serif;
+}
+
+.head{
+    height: 30vh;
+    background-image: url(./../irudiak/facultadHorizontal.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    
+   
+}
+
+.header2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    
+}
+.header3{
+
+    text-align: center;
+    max-width: 300px ;
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+    
+}
+
+/*Mugikorrarentzat*/
+
+@media (max-width: 768px) {
+    .container {
+        width: 65vh;
+    }
+
+   
+}
