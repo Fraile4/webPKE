@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrAL</title>
-    <link rel="stylesheet" href="Styles/styles.css">
-    <link rel="stylesheet" href="Styles/menu.css">
-    <link rel="stylesheet" href="Styles/header.css">
-    <script src="JS/menu.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GrAL</title>
+
+	<!-- CSS -->
+
+	<link rel="stylesheet" href="Styles/styles.css">
+	<link rel="stylesheet" href="Styles/menu.css">
+	<link rel="stylesheet" href="Styles/header.css">
+
+	<!-- JS -->
+	<link rel="stylesheet" href="./JS/sarrera.js">
+
+	<!-- ICONOS -->
+	<link rel="icon" href="./irudiak/upvIcono-removebg-preview.ico" type="image/x-icon">
+	<link rel="icon" href="./irudiak/lupa.ico">
 </head>
+<script src="JS/menu.js"></script>
+</head>
+
 <body>
-    <header class="header"><!--Hau beti berdina izango da -->
+	<header class="header"><!--Hau beti berdina izango da-->
 		<div class="container">
 			<div class="btn-menu">
 				<label for="btn-menu">☰</label>
 			</div>
+
 			<nav class="menu">
-				<a href="Index.html">Sarrera</a>
-				<a href="AboutUs.html">About Us</a>
+				<a href="index.html">Sarrera</a>
+				<a href="gralMemoriak.html">Gral Memoriak</a>
+				<a href="galdetegia.html">Galdetegia</a>
+				<a href="AboutUs.html">Guri buruz</a>
+				<input class="form-control me-2" type="search" placeholder="Bilatu" aria-label="Search">
+				<div id="results"></div>
+				<img class="lupa" src="/irudiak/lupa.ico" alt="">
+
 			</nav>
+
 		</div>
 	</header>
 	<div class="capa"></div>
@@ -26,14 +47,25 @@
 	<div class="container-menu">
 		<div class="cont-menu">
 			<nav>
-				<a href="GralMemoriak.html">GrAL Memoriak</a>
+				<a href="index.html">Sarrera</a>
 			</nav>
+			<nav>
+				<a href="gralMemoriak.html">GrAL Memoriak</a>
+			</nav>
+			<nav>
+				<a href="galdetegia.html">Galdetegia</a>
+			</nav>
+			<nav>
+				<a href="aboutUs.html">AboutUs</a>
+			</nav>
+
 			<label for="btn-menu">✖️</label>
 		</div>
-	</div><!-----------------------------------------------> 
-    <div id="title">
-        <h1>GrAL informazioa</h1>
-        <h4>Danel Osa, Ioritz Tubío, Manex Ormazabal eta Unai Fraile</h2>
-    </div>
+	</div>
+	<div id="title">
+		<h1>GrAL informazioa</h1>
+		<h4>Danel Osa, Ioritz Tubío, Manex Ormazabal eta Unai Fraile</h2>
+	</div>
 </body>
+
 </html>
