@@ -15,6 +15,7 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
+
 /*
 var prevScrollpos = window.pageYOffset;
 var threshold = 50; // Ajusta este valor según tus preferencias
