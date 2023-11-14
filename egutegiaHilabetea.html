@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #calendar-container {
+            color: #000000;
+            display: inline-block;
+            text-align: left;
+            width: 300px;
+            position: static;
+        }
+
+        #calendar-buttons {
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        table {
+            background-color: aliceblue;
+            color: #000000;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #ccc;
+        }
+
+        .month-header {
+            text-align: center;
+        }
+
+        .month-button {
+            cursor: pointer;
+            background-color: #ccc;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <header class="header"><!--Hau beti berdina izango da-->
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <nav class="menu">
+                    <a href="Index.html">Sarrera</a>
+                    <a href="AboutUs.html">About Us</a>
+                </nav>
+            </div>
+        </header>
+        <div class="capa"></div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a href="GralMemoriak.html">GrAL Memoriak</a>
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div><!----------------------------------------------->
+        <h1>Egutegia</h1>
+    <div id="calendar-container">
+        <div id="calendar-buttons">
+            <button class="month-button" onclick="changeMonth(-1)"><</button>
+            <button class="month-button" onclick="changeMonth(1)">></button>
+        </div>
+        <div class="month-header">
+            <span id="current-month-year"></span>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Domingo</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <!-- El contenido del calendario se generará aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+        let currentMonth = new Date().getMonth();
+        let currentYear = new Date().getFullYear();
+
+        function generateCalendar(year, month) {
+            const firstDay = new Date(year, month, 1);
+            const lastDay = new Date(year, month + 1, 0);
+            const daysInMonth = lastDay.getDate();
+
+            const calendarBody = document.getElementById("calendar-body");
+            const calendarHeader = document.getElementById("current-month-year");
+
+            calendarHeader.innerHTML = `${months[month]} ${year}`;
+
+            let date = 1;
+            let day = firstDay.getDay();
+
+            for (let i = 0; i < 6; i++) {
+                let row = document.createElement("tr");
+                for (let j = 0; j < 7; j++) {
+                    if (i === 0 && j < day) {
+                        const cell = document.createElement("td");
+                        cell.textContent = "";
+                        row.appendChild(cell);
+                    } else if (date <= daysInMonth) {
+                        const cell = document.createElement("td");
+                        cell.textContent = date;
+                        row.appendChild(cell);
+                        date++;
+                    }
+                }
+                calendarBody.appendChild(row);
+            }
+        }
+
+        function changeMonth(offset) {
+            currentMonth += offset;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            } else if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+
+            const calendarBody = document.getElementById("calendar-body");
+            while (calendarBody.firstChild) {
+                calendarBody.removeChild(calendarBody.firstChild);
+            }
+
+            generateCalendar(currentYear, currentMonth);
+        }
+
+        generateCalendar(currentYear, currentMonth);
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ccc;
+        }
+
+        .year-buttons {
+            margin-top: 10px;
+        }
+
+        .year-button {
+            cursor: pointer;
+            background-color: #ccc;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Egutegia</h1>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">2023</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Enero</td>
+                <td>Febrero</td>
+                <td>Marzo</td>
+            </tr>
+                <td>Abril</td>
+                <td>Mayo</td>
+                <td>Junio</td>
+            </tr>
+                <td>Julio</td>
+                <td>Agosto</td>
+                <td>Septiembre</td>
+            </tr>
+                <td>Octubre</td>
+                <td>Noviembre</td>
+                <td>Diciembre</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="year-buttons">
+        <button class="year-button" onclick="changeYear(-1)"><</button>
+        <button class="year-button" onclick="changeYear(1)">></button>
+    </div>
+
+    <script>
+        let currentYear = 2023;
+
+        function changeYear(offset) {
+            currentYear += offset;
+            document.getElementsByTagName('th')[0].innerHTML = currentYear;
+
+            // Puedes realizar aquí cualquier otra lógica relacionada con cambiar de año
+        }
+    </script>
+</body>
+</html>
+
