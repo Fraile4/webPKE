@@ -5,25 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>GrAL</title>
-
-	<!-- Boostrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-	<!-- CSS -->
 	<link rel="stylesheet" href="Styles/styles.css">
 	<link rel="stylesheet" href="Styles/menu.css">
 	<link rel="stylesheet" href="Styles/header.css">
-
-	<!-- JS -->
-
-
-
-	<!-- ICONOS -->
-	<link rel="icon" href="./irudiak/iconoUPV.ico" type="image/x-icon">
-	
+	<!-- Boostrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
 
+<body>
 	<header class="header"><!--Hau beti berdina izango da-->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -39,7 +28,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto" style="background-color:  transparent;">
-					<li class="nav-item active mb-3">
+					<li class="nav-item mb-3">
 						<a class="nav-link" href="index.html">Hasiera</a>
 					</li>
 					<li class="nav-item mb-3">
@@ -54,7 +43,7 @@
 					<li class="nav-item mb-3">
 						<a class="nav-link" href="galdetegia.html">Galdetegia</a>
 					</li>
-					<li class="nav-item mb-3">
+					<li class="nav-item active mb-3">
 						<a class="nav-link" href="aboutUs.html">Guri Buruz</a>
 					</li>
 				</ul>
@@ -62,15 +51,17 @@
 		</nav>
 	</header>
 	<script src="./JS/index.js"></script>
-	<script src="JS/menu.js"></script>
-
-
 	<div class="capa"></div>
-
-	<div id="title">
-		<h1>GrAL informazioa</h1>
-		<h4>Danel Osa, Ioritz Tubío, Manex Ormazabal eta Unai Fraile</h2>
-	</div>
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a href="gralMemoriak.html">GrAL Memoriak</a>
+			</nav>
+			<label for="btn-menu">✖️</label>
+		</div>
+	</div><!----------------------------------------------->
+	<h1>About Us</h1>
 </body>
 
 </html>
