@@ -7,28 +7,6 @@ body {
     padding: 0;
 }
 
-.taula {
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  th, td {
-    border: 1px solid #dddddd; /* Establece el borde de 1 píxel sólido con color gris */
-    padding: 8px;
-    text-align: left;
-  }
-
-  th {
-    background-color: #f2f2f2; /* Establece un color de fondo gris claro para las celdas de encabezado */
-  }
-.calendar-buttons{
-    background-color: rgb(255, 255, 255);
-}
-
-.month-button{
-    background-color: #dddddd;
-}
-
 .head{
     height: 30vh;
     background-image: url(./../irudiak/facultadHorizontal.jpg);
@@ -55,18 +33,40 @@ body {
     
 }
 
+.taula {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #dddddd; /* Establece el borde de 1 píxel sólido con color gris */
+    padding: 16px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2; /* Establece un color de fondo gris claro para las celdas de encabezado */
+  }
+.calendar-buttons{
+    background-color: rgb(255, 255, 255);
+}
+
+.month-button{
+    background-color: #dddddd;
+}
+
+
 .kalendario{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
     width:fit-content;
 }
 
 /*Mugikorrarentzat*/
 
 @media (max-width: 768px) {
-    .container {
+    .kalendario {
         width: 65vh;
     }
 
