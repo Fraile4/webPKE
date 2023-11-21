@@ -50,8 +50,8 @@ body {
 .calendar-buttons{
     background-color: rgb(255, 255, 255);
 }
-month-button1{
-    
+.month-button1{
+
 }
 
 .month-button2{
@@ -63,9 +63,8 @@ month-button1{
     max-width: 300px ;
     padding: 20px;
     border: 2px solid  #dddddd;
-    position: absolute;
-    top:300px; 
-    left: 45%;
+    position: relative;
+    margin-top: 0;
 }
 
 
@@ -73,10 +72,15 @@ month-button1{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:50%;
-    border: 5px black;
-    margin:0 auto;
-    height: 100vh; 
+    width:fit-content;
+    border: 5px solid black;
+    flex-direction:column ;
+}
+
+.goikoatala{
+    border: solid black;
+    width:100%;
+    text-align: center;
 }
 
 /*Mugikorrarentzat*/
