@@ -12,8 +12,6 @@ body {
     background-image: url(./../irudiak/facultadHorizontal.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
-    
-   
 }
 
 .header2{
@@ -24,13 +22,11 @@ body {
     
 }
 .header3{
-
     text-align: center;
     max-width: 300px ;
     color: white;
     padding: 20px;
     border: 2px solid white;
-    
 }
 
 .taula {
@@ -51,20 +47,20 @@ body {
     background-color: rgb(255, 255, 255);
 }
 .month-button1{
-
+    display: inline-block;
+    margin: 10px;
 }
 
 .month-button2{
-    
+    display: inline-block;
+    margin: 10px;
 }
 
 .month-header{
     text-align: center;
     max-width: 300px ;
     padding: 20px;
-    border: 2px solid  #dddddd;
-    position: relative;
-    margin-top: 0;
+    display: inline-block;
 }
 
 
@@ -73,12 +69,12 @@ body {
     align-items: center;
     justify-content: center;
     width:fit-content;
-    border: 5px solid black;
     flex-direction:column ;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .goikoatala{
-    border: solid black;
     width:100%;
     text-align: center;
 }
