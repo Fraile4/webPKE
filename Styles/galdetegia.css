@@ -10,9 +10,9 @@ body {
 
 .containerG {
     
-    width: 700px;
+   
     margin: 20px auto;
-    display: flex;
+  
     flex-direction: column;
     align-items: flex-start;
     background-color: #fff;
@@ -66,29 +66,53 @@ body {
 
 /*Mugikorrarentzat*/
 
+
 @media (max-width: 768px) {
-    
     .head {
         height: 30vh;
-        background-image: url(./../irudiak/facultadHorizontal.jpg);
-        background-size: cover; 
-        background-repeat: no-repeat;
+        /* Opciones de background... */
     }
 
     .header2 {
         display: flex;
         align-items: center;
         justify-content: center;
-       
     }
 
     .header3 {
         text-align: center;
+        width: 90%; /* Ajuste para pantallas más pequeñas */
         max-width: 300px;
         color: white;
         padding: 20px;
         border: 2px solid white;
+        margin: 0 auto; /* Centrar en pantallas pequeñas */
     }
 
-    
+    .containerG {
+         
+    margin: 20px auto;
+  
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Modifica el margen para un mejor ajuste */
+    }
+
+    .quiz {
+        text-align: center; /* Alineación en pantallas más pequeñas */
+    }
+
+    .quiz form {
+        display: block; /* Hacer que el formulario sea de bloque para ajustar a pantalla completa */
+        width: 90%; /* Ancho del formulario ajustado */
+        margin: 0 auto; /* Centrar el formulario */
+    }
+
+    .submit-button {
+        display: block; /* Hacer el botón de bloque para ajustar a pantalla completa */
+        margin: 10px auto; /* Centrar el botón */
+    }
 }

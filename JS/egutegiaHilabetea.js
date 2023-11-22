@@ -1,5 +1,5 @@
 
-        const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        const months = ['Urtarrila', 'Otsaila', 'Martxoa', 'Apirila', 'Maiatza', 'Ekaina', 'Uztaila', 'Abuztua', 'Iraila', 'Urria', 'Azaroa', 'Abendua'];
 
         let currentMonth = new Date().getMonth();
         let currentYear = new Date().getFullYear();
@@ -15,7 +15,8 @@
             calendarHeader.innerHTML = `${months[month]} ${year}`;
 
             let date = 1;
-            let day = firstDay.getDay();
+           let day = (firstDay.getDay() -1) % 7;
+
 
             for (let i = 0; i < 6; i++) {
                 let row = document.createElement("tr");

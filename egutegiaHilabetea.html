@@ -57,24 +57,27 @@
             <h1 class="header3">Egutegia</h1>
         </div>
     </div>
-    <div id="calendar-container">
-        <div id="calendar-buttons">
-            <button class="month-button" onclick="changeMonth(-1)"><</button>
-            <button class="month-button" onclick="changeMonth(1)">></button>
+    <div class="kalendario" id="calendar-container">
+        <div class="goikoatala">
+            <div class="calendar-buttons">
+                <button class="month-button1" onclick="changeMonth(-1)"><</button>
+                <div class="month-header">
+                    <span id="current-month-year"></span>
+                </div>
+                <button class="month-button2" onclick="changeMonth(1)">></button>
+            </div>
         </div>
-        <div class="month-header">
-            <span id="current-month-year"></span>
-        </div>
-        <table>
+        <p></p>
+        <table class="taula">
             <thead>
                 <tr>
-                    <th>Domingo</th>
-                    <th>Lunes</th>
-                    <th>Martes</th>
-                    <th>Miércoles</th>
-                    <th>Jueves</th>
-                    <th>Viernes</th>
-                    <th>Sábado</th>
+                    <th>Astelehena</th>
+                    <th>Asteartea</th>
+                    <th>Asteazkena</th>
+                    <th>Osteguna</th>
+                    <th>Ostirala</th>
+                    <th>Larunbata</th>
+                    <th>Igandea</th>
                 </tr>
             </thead>
             <tbody id="calendar-body">

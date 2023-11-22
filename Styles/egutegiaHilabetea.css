@@ -3,16 +3,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(231, 231, 231);
-   
     margin: 0;
     padding: 0;
-}
-
-.table{
-    background-color: aliceblue;
-}
-.calendar-buttons{
-    background-color: rgb(13, 119, 212);
 }
 
 .head{
@@ -20,8 +12,6 @@ body {
     background-image: url(./../irudiak/facultadHorizontal.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
-    
-   
 }
 
 .header2{
@@ -32,19 +22,72 @@ body {
     
 }
 .header3{
-
     text-align: center;
     max-width: 300px ;
     color: white;
     padding: 20px;
     border: 2px solid white;
-    
+}
+
+.taula {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #dddddd; /* Establece el borde de 1 píxel sólido con color gris */
+    padding: 16px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2; /* Establece un color de fondo gris claro para las celdas de encabezado */
+  }
+  
+  tr td:nth-child(6),
+    tr td:nth-child(7) {
+      background-color:  #f2f2f2; /* Color de fondo para las columnas 2 y 4 */
+    }
+
+.calendar-buttons{
+    background-color: rgb(255, 255, 255);
+}
+.month-button1{
+    display: inline-block;
+    margin: 10px;
+}
+
+.month-button2{
+    display: inline-block;
+    margin: 10px;
+}
+
+.month-header{
+    text-align: center;
+    max-width: 300px ;
+    padding: 20px;
+    display: inline-block;
+}
+
+.kalendario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:fit-content;
+    flex-direction:column ;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.goikoatala{
+    width:100%;
+    text-align: center;
 }
 
 /*Mugikorrarentzat*/
 
 @media (max-width: 768px) {
-    .container {
+    .kalendario {
         width: 65vh;
     }
 
