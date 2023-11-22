@@ -43,6 +43,12 @@ body {
   th {
     background-color: #f2f2f2; /* Establece un color de fondo gris claro para las celdas de encabezado */
   }
+
+  tr td:nth-child(1),
+    tr td:nth-child(7) {
+      background-color:  #ff7272; /* Color de fondo para las columnas 2 y 4 */
+    }
+
 .calendar-buttons{
     background-color: rgb(255, 255, 255);
 }
