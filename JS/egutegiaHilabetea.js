@@ -15,7 +15,8 @@
             calendarHeader.innerHTML = `${months[month]} ${year}`;
 
             let date = 1;
-            let day = firstDay.getDay();
+           let day = (firstDay.getDay() -1) % 7;
+
 
             for (let i = 0; i < 6; i++) {
                 let row = document.createElement("tr");
