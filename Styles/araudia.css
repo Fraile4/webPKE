@@ -1,32 +1,9 @@
-.head{
-    height: 350px;
-    background-image: url(./../irudiak/facultadHorizontal.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat;
-    
-   
-}
 
-.header2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-    
-}
-.header3{
-
-    text-align: center;
-    max-width: 300px ;
-    color: white;
-    padding: 20px;
-    border: 2px solid white;
-    
-}
 
 main{
     display: flex;
     flex-direction: column;
+    width: 90%; 
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -42,6 +19,7 @@ main{
 /*I need to hide the mains sections of the page*/
 main section{
    overflow: hidden;
+   text-align: justify;
    
 }
 
