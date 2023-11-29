@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
+
+.header {
+    background-color: #1b1b1ba6;
+    background-image: url(../irudiak/facultadHorizontal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+
+    width: 100%;
+    height: 35dvh;
+
+
+    padding-bottom: 15dvh;
+    position: relative;
+}
+
+.boostMenu {
+    width: 100%;
+
+}
+
+.Izenburua {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    padding: 2dvh;
+    border: 5px solid white;
+
+
+}
+
+.section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+
+}
+
+.specialty {
+    /*I need to put the text down the picture*/
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    color: black;
+    /*I need more distance between image and text*/
+    gap: 0.5rem;
+
+}
+
+.img {
+    width: 20dvh;
+    background-color: #1b1b1ba6;
+    color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+}
