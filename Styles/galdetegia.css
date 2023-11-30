@@ -8,111 +8,59 @@ body {
     padding: 0;
 }
 
-.containerG {
-    
-   
+.section {
+
+    display: block;
+    width:880px;
     margin: 20px auto;
-  
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #fff;
+    background-color: #080808cc;
+    background-image: url(../irudiak/Informatika_fakultatea_001.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(70, 53, 0, 0.555);
     border-radius: 5px;
+    box-shadow: 0 0 5px rgb(70, 53, 0);
+    gap: 4rem;
 }
 
-.quiz {
-    display: inline-block;
-    margin-right: 20px;
+.quizcompleted{
+    background-color: transparent;
+   
 }
 
-.quiz form {
-    display: inline-block;
+.quiz{
+    color: white;
+    font-size: bold;
 }
-
+.button{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
 .submit-button {
-    min-width: 60px;
-    min-height: 25px;
-    margin-left: 88%;
+    width: 60px;
+    margin-right: 0;
     font-family: Arial, sans-serif;
 }
 
-.head{
-    height: 350px;
-    background-image: url(./../irudiak/facultadHorizontal.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat;
-    
-   
-}
-
-.header2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-    
-}
-.header3{
-
-    text-align: center;
-    max-width: 300px ;
+ 
+#kalifikazioa{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 2dvh;
     color: white;
-    padding: 20px;
-    border: 2px solid white;
-    
 }
 
-
-/*Mugikorrarentzat*/
-
-
-@media (max-width: 768px) {
-    .head {
-        height: 30vh;
-        /* Opciones de background... */
-    }
-
-    .header2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header3 {
-        text-align: center;
-        width: 90%; /* Ajuste para pantallas más pequeñas */
-        max-width: 300px;
-        color: white;
-        padding: 20px;
-        border: 2px solid white;
-        margin: 0 auto; /* Centrar en pantallas pequeñas */
-    }
-
-    .containerG {
-         
-    margin: 20px auto;
-  
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Modifica el margen para un mejor ajuste */
-    }
-
-    .quiz {
-        text-align: center; /* Alineación en pantallas más pequeñas */
-    }
-
-    .quiz form {
-        display: block; /* Hacer que el formulario sea de bloque para ajustar a pantalla completa */
-        width: 90%; /* Ancho del formulario ajustado */
-        margin: 0 auto; /* Centrar el formulario */
-    }
-
-    .submit-button {
-        display: block; /* Hacer el botón de bloque para ajustar a pantalla completa */
-        margin: 10px auto; /* Centrar el botón */
+.separador{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.308);
+    margin: 0 auto;
+    width: 80%;
+}
+@media only screen and (max-width: 992px){
+    .section{
+        width: 90%;
     }
 }

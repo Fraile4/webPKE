@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrAL Memoriak</title>
 
-    <link rel="stylesheet" href="./Styles/gralMemoriak.css">
+    <link rel="stylesheet" href="./Styles/galdetegia.css">
     <link rel="stylesheet" href="./Styles/header.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -56,19 +56,29 @@
         <script src="./JS/index.js"></script>
     </div>
 
-    <div class="containerG" ;>
-        <div class="quiz">
-            <form id="quizForm" style="background-color: #fff;  " ;>
+
+    <div class="section" ;>
+        <div class="quizCompleted">
+            <form class="quiz" id="quizForm" ;>
+
                 <p>Lana ADDIra azken egunean igo ondoren zenbat denora izango duzu defentsa prestatzeko?</p>
                 <input type="radio" name="q1" value="correct"> Egun Bat.<br>
                 <input type="radio" name="q1" value="30"> Hilabete bat.<br>
                 <input type="radio" name="q1" value="7"> Aste bat. <br>
                 <input type="radio" name="q1" value="x"> Deialdiaren araberakoa da.<br>
                 <br>
+                <div class="separador">
+
+                </div>
+
+                <br>
                 <p>Zenbat deialdi erabili ahal dira kurtso batean?</p>
                 <input type="radio" name="q2" value="correct"> Deialdi bakarra<br>
                 <input type="radio" name="q2" value="2"> Bi deaialdi.<br>
                 <input type="radio" name="q2" value="x"> Nahi den kopurua deialdi kopuru maximora iritsi gabe.<br>
+                <br>
+                <div class="separador"></div>
+
                 <br>
                 <p>Noiz erreklamatu ahal daitezke kalifikazioak?</p>
                 <input type="radio" name="q3" value="correct"> 7 Lanegun pasa eta gero.<br />
@@ -76,15 +86,27 @@
                 <input type="radio" name="q3" value="3"> 3 Lanegun pasa eta gero.<br />
                 <input type="radio" name="q3" value="0"> Kalifikazioak jaso bezain laster. <br />
                 <br>
-                <p>Noiz ebaluatu eta defendatu daiteke gradu amaierako lan bat?</p>
-                <input type="radio" name="q4" value="correct"> Graduko irakasgai guztiak gainditutakoan. <br />
-                <input type="radio" name="q4" value="18"> Gainditzeko hautazko 18 kreditu edo gutxiago bakarrik falta
-                direnean. <br />
-                <input type="radio" name="q4" value="3"> 3. mailako irakasgai guztiak gainditutakoan. <br />
+                <div class="separador"></div>
+                <br>
+                <div>
+                    <p>Noiz ebaluatu eta defendatu daiteke gradu amaierako lan bat?</p>
+                    <input type="radio" name="q4" value="correct"> Graduko irakasgai guztiak gainditutakoan. <br />
+                    <input type="radio" name="q4" value="18"> Gainditzeko hautazko 18 kreditu edo gutxiago bakarrik
+                    falta
+                    direnean. <br />
+                    <input type="radio" name="q4" value="3"> 3. mailako irakasgai guztiak gainditutakoan. <br />
+                    <p></p>
             </form>
+
         </div>
+
         <br />
-        <button class="submit-button">Bidali</button>
+        <div class="button">
+            <button class="submit-button">Bidali</button>
+            <span id="kalifikazioa"></span>
+            <script src="./JS/galdetegia.js"></script>
+        </div>
+
     </div>
 
 
