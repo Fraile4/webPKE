@@ -19,7 +19,7 @@ main{
 /*I need to hide the mains sections of the page*/
 main section{
    overflow: hidden;
-   text-align: justify;
+   
    
 }
 
@@ -27,4 +27,8 @@ main section h4{
     background-color: rgb(250, 239, 226);
    /*underline the text*/
     text-decoration: underline;
+}
+
+.content{
+    text-align: justify
 }

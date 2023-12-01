@@ -2,19 +2,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(231, 231, 231);
     min-height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-.section {
-
+.section {  
+   
     display: block;
     width:880px;
-    margin: 20px auto;
-    background-color: #080808cc;
-    background-image: url(../irudiak/Informatika_fakultatea_001.jpeg);
+    margin: 50px auto;
+    background-color: white/* #080808cc */;
+   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,7 +22,7 @@ body {
     padding: 20px;
     border: 1px solid rgba(70, 53, 0, 0.555);
     border-radius: 5px;
-    box-shadow: 0 0 5px rgb(70, 53, 0);
+    box-shadow: 0 0 10px rgb(70, 53, 0);
     gap: 4rem;
 }
 
@@ -33,7 +32,7 @@ body {
 }
 
 .quiz{
-    color: white;
+    color: black;
     font-size: bold;
 }
 .button{
@@ -55,10 +54,15 @@ body {
 }
 
 .separador{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.308);
+    border-bottom: 1px solid rgba(29, 29, 29, 0.61);
     margin: 0 auto;
     width: 80%;
+    
 }
+
+
+
+
 @media only screen and (max-width: 992px){
     .section{
         width: 90%;
