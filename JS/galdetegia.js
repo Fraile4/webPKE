@@ -3,8 +3,9 @@
 let erantzunak = {
 };
 
+let galderak = document.querySelectorAll('#galdera');
 let erantzunakLortu = () => {
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i <= galderak.length; i++) {
         let galdera = `q${i}`;
         if (document.querySelector(`input[name="q${i}"]:checked`) != null) {
             erantzunak[galdera] = document.querySelector(`input[name="q${i}"]:checked`).value; 
@@ -17,7 +18,7 @@ let kalifikatu = () => {
     erantzunakLortu();
     // Kalifikazioa lortu.
     let kalifikazioa = 0;
-    for(let i = 1; i < 5; i++){
+    for(let i = 1; i <= galderak.length; i++){
         let galdera = `q${i}`;
         if (erantzunak[galdera] == "correct") {
             kalifikazioa++; 
@@ -26,6 +27,7 @@ let kalifikatu = () => {
         }
     }
     // Erantzuna argitaratu.
+    kalifikazioa = (kalifikazioa * 10)/galderak.length;
     document.getElementById('kalifikazioa').innerHTML = 'Zure nota ' + kalifikazioa + ' da';
 }
 
