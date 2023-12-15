@@ -1,5 +1,11 @@
 .section{
-    background-color: red;
-    color:white;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.content{
+    background-color:aliceblue;
 }
 
