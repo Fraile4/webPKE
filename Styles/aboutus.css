@@ -1,11 +1,67 @@
-.section{
-    display: flex;
+
+/* Estilos para el contenedor principal */
+.body {
+    height: 100dvh;
+   
+    background-color: #0f0f0fc0;
+    background-image: url(../irudiak/Informatika_fakultatea_001.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+.container {
+    max-width: 800px;
+    background-color: transparent;
+    /* Ancho máximo del contenedor */
+    height: 55dvh;
+
+    position: absolut;
+    top: 20%;
+    left: 50%;
+   
+
+    margin: 0;
+    /* Centrar el contenedor en la página */
+  
+    padding: 20px;
+    /* Espaciado interno */
+   
+
+    font-family: Arial, sans-serif;
+    /* Tipo de fuente */
     align-items: center;
 }
 
-
-
-.content{
-    background-color:aliceblue;
+/* Estilos para el texto principal */
+.text {
+    background-color: #f0f0f0;
+    /* Color de fondo */
+    padding: 30px;
+    /* Espaciado interno */
+    border-radius: 5px;
+   
+    /* Bordes redondeados */
 }
 
+/* Estilos para el pie de página */
+.footer {
+    
+    text-align: center;
+    /* Alinear texto al centro */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+    padding: 30px;
+    /* Espaciado interno */
+    background-color: #333;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+}
+
+/* Estilos para el texto del pie de página */
+.textcontent {
+    font-weight: 600;
+}
