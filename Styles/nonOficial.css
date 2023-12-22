@@ -1,7 +1,7 @@
 .footer{
     margin-top: 20px;
     height: 8dvh;
-    background-color: rgba(255, 0, 0, 0.781);
+    background-color:#1b1b1ba6;
     position: relative;
 }
 
@@ -10,6 +10,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
