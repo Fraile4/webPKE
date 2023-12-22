@@ -28,7 +28,7 @@ let kalifikatu = () => {
     }
     // Erantzuna argitaratu.
     kalifikazioa = (kalifikazioa * 10)/galderak.length;
-    document.getElementById('kalifikazioa').innerHTML = 'Zure nota ' + kalifikazioa + ' da';
+    document.getElementById('kalifikazioa').innerHTML = 'Zure nota ' + kalifikazioa .toFixed(2)+ ' da';
 }
 
 
